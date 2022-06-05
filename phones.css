@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+    box-sizing: border-box;
+}
+
+.logoo{
+    width: 130px;
+    cursor: pointer;
+    position: absolute;
+}
+
+nav{
+    background-color: chartreuse;
+    display: grid;
+    place-items: center;
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+nav ul a{
+    display:inline-block;
+    padding: 20px;
+    text-decoration: none;
+    color: blue;
+    transition: 0.2s ease-in;
+    font-size: 16px;
+}
+
+nav ul a:hover{
+    background-color: gold;
+    color: indigo;
+}
+
+.items{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 30px 20px;
+    grid-column-gap: 20px;
+    grid-row-gap: 30px;
+}
+
+.item img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.item h4{
+    padding: 5px;
+    text-align: center;
+}
+
+.item button{
+    padding: 5px 30px;
+    border: none;
+    outline: none;
+    background-color: gold;
+    color:black;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 15px;
+    display: block;
+    margin: auto;
+    transition: 0.3s all;
+}
+
+.item button:hover{
+    transform: scale(1.05);
+}
+
+@media screen and (max-width: 1000px){
+    .items{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 600px){
+    .items{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+
+

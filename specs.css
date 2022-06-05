@@ -1,0 +1,56 @@
+.logoo{
+    width: 235px;
+    cursor: pointer;
+    position: absolute;
+}
+
+nav{
+    background-color: chartreuse;
+    display: grid;
+    place-items: center;
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+nav ul a{
+    display:inline-block;
+    padding: 20px;
+    text-decoration: none;
+    color: blue;
+    transition: 0.2s ease-in;
+    font-size: 30px;
+}
+
+nav ul a:hover{
+    background-color: gold;
+    color: indigo;
+}
+
+button{
+    padding: 10px 30px;
+    border: none;
+    outline: none;
+    background-color: gold;
+    color:black;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 15px;
+    display: block;
+    margin: auto;
+    transition: 0.3s all;
+}
+
+button:hover{
+    transform: scale(1.05);
+}
+
+tr, td {
+    padding: 15px;
+    text-align: left;
+  }
+
+  table{
+    width: 70%;
+}
